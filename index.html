@@ -7,6 +7,14 @@
     <title>Document</title>
     <script src="https://cdn.signalwire.com/@signalwire/js"></script>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
         #video{
             border: 1px solid black;
             border-radius: .5rem;
@@ -18,11 +26,22 @@
             max-height: 400px;
             object-fit: cover;
         }
+        button{
+            padding: .6rem 1rem;
+            background-color: rgb(44, 43, 43);
+            color: white;
+            font-size: 1.2rem;
+            border-radius: .5rem;
+            display: block;
+            margin: .6rem auto;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     
-<video id="video"  autoplay ></video>
+<video id="video"  autoplay playsinline></video>
+<button id="allowBtn">Allow Camera Permission</button>
     <script src="./script.js"></script>
 </body>
 </html>
